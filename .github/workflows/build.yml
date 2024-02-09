@@ -1,0 +1,26 @@
+name: Test CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/Hydrogen
+         
+      - name: Install Supernova CLI dependency
+        run: npm install --g @supernovaio/cli
+
+      - name: Check Supernova version
+        run: supernova --version
+
+      - name: Describe design system
+        run: >
+          supernova describe-design-system
+          --apiKey="${{ secrets.SUPERNOVA_API_KEY }}"
+          --designSystemId="105994"
