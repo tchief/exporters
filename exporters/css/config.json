@@ -60,6 +60,66 @@
         }
     },
     {
+        "key": "customizeTokenNameStructureOverrides",
+        "type": "boolean",
+        "default": false,
+        "title": "Override name structure per type",
+        "description": "Override the token name structure for specific token types only.",
+        "category": "Token names"
+    },
+    {
+        "key": "tokenNameStructureOverrides",
+        "type": "object",
+        "title": "Token name structure overrides",
+        "description": "Set custom name structure for specific token types. Types not specified will use the default tokenNameStructure.",
+        "category": "Token names",
+        "dependsOn": {
+        "customizeTokenNameStructureOverrides": true
+        },
+        "default": {
+        "BorderRadius": "nameOnly",
+        "BorderWidth": "nameOnly"
+        },
+        "allowedKeys": {
+        "options": [
+            "Color",
+            "Typography",
+            "Dimension",
+            "Size",
+            "Space",
+            "Opacity",
+            "FontSize",
+            "LineHeight",
+            "LetterSpacing",
+            "ParagraphSpacing",
+            "BorderWidth",
+            "BorderRadius",
+            "Duration",
+            "ZIndex",
+            "Shadow",
+            "Border",
+            "Gradient",
+            "String",
+            "ProductCopy",
+            "FontFamily",
+            "FontWeight",
+            "TextCase",
+            "TextDecoration",
+            "Visibility",
+            "Blur"
+        ],
+        "type": "string"
+        },
+        "allowedValues": {
+        "options": [
+            "pathAndName",
+            "nameOnly",
+            "collectionPathAndName"
+        ],
+        "type": "string"
+        }
+    },
+    {
         "key": "colorFormat",
         "type": "enum",
         "default": "smartHashHex",
