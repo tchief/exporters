@@ -71,7 +71,7 @@
         "key": "tokenNameStructureOverrides",
         "type": "object",
         "title": "Token name structure overrides",
-        "description": "Set custom name structure for specific token types. Types not specified will use the default tokenNameStructure.",
+        "description": "Set custom name structure for specific token types. Types not specified will use the default tokenNameStructure. Options: pathAndName, nameOnly, collectionPathAndName.",
         "category": "Token names",
         "dependsOn": {
         "customizeTokenNameStructureOverrides": true
