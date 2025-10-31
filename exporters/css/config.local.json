@@ -1,31 +1,3 @@
 {
-    "showDisclaimer": false,
-    "customizeTokenPrefixes": true,
-    "tokenPrefixes": {
-      "Blur": "blur",
-      "Border": "border",
-      "BorderRadius": "",
-      "BorderWidth": "",
-      "Color": "color",
-      "Dimension": "dimension",
-      "Duration": "duration",
-      "FontFamily": "fontFamily",
-      "FontSize": "fontSize",
-      "FontWeight": "fontWeight",
-      "Gradient": "gradient",
-      "LetterSpacing": "letterSpacing",
-      "LineHeight": "lineHeight",
-      "Opacity": "opacity",
-      "ParagraphSpacing": "paragraphSpacing",
-      "ProductCopy": "productCopy",
-      "Shadow": "shadow",
-      "Size": "size",
-      "Space": "space",
-      "String": "string",
-      "TextCase": "textCase",
-      "TextDecoration": "textDecoration",
-      "Typography": "typography",
-      "Visibility": "visibility",
-      "ZIndex": "zIndex"
-    }
+    "showDisclaimer": false
 }
